@@ -1,3 +1,14 @@
+# 编译GmSSL
+```bash
+mkdir -p /opt/GmSSL 
+git clone https://github.com/qweraqq/GmSSL.git /opt/GmSSL
+cd /opt/GmSSL
+./config 
+make
+make install
+ln -s libgmssl.so.3 libssl.so
+ldconfig
+```
 # nginx-gm
 集成GmSSL的nginx，支持TLS和GMTLS同时提供服务
 
