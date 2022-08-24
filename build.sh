@@ -1,7 +1,7 @@
 #!/bin/bash
 # apt-get install libpcre3 libpcre3-dev
 # apt-get install zlib1g zlib1g-dev
-
+# mkdir -p /opt/GmSSL && git clone https://github.com/guanzhi/GmSSL.git /opt/GmSSL
 ./auto/configure  \
     --prefix=/etc/nginx \
     --sbin-path=/usr/sbin/nginx \
@@ -36,4 +36,4 @@
     --with-mail_ssl_module \
     --with-file-aio \
     --with-http_v2_module \
-    --with-openssl=/mnt/g/Git/GmSSL 
+    --with-openssl=/opt/GmSSL 
